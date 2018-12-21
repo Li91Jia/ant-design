@@ -56,9 +56,9 @@ class PicturesWall extends React.Component {
           onPreview={this.handlePreview}
           onChange={this.handleChange}
         >
-          {fileList.length >= 3 ? null : uploadButton}
+          Upload
         </Upload>
-        <Modal visible={previewVisible} footer={null} onCancel={this.handleCancel}>
+        <Modal>
           <img alt="example" style={{ width: '100%' }} src={previewImage} />
         </Modal>
       </div>
